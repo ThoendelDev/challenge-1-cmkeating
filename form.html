@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment 4</title>
+    <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+    <!--    
+        Collin Keating
+        form.html
+        INFO2439.PLA
+        Thoendel
+        9/6/19
+    -->
+	<div data-role="page" id="homePage" data-title="Survey" data-add-back-btn="true" data-back-btn-text="Back"><p><img src="logo.png" alt="Bistro Logo"></p>
+<div data-role="header" data-position="fixed"><a data-transition="slide" href="#" data-direction="reverse" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-back">Back</a></div>
+            <h1>Feedback</h1>
+        </header>
+        <div data-role="content">
+            <form action="http://lolberding.portfolios.mccinfo.net/info_survey/bistrosurvey_insert.php" method="post">
+                <label for="meal">How would you rate your meal today?</label>
+                <select name="meal_rate" id="meal_rate">
+                        <option value="1">1 - Poor</option>
+                        <option value="2">2 - Needs Work</option>
+                        <option value="3">3 - Fair</option>
+                        <option value="4">4 - Good</option>
+                        <option value="5">5 - Excellent</option>
+                    </select>
+                <hr>
+                <label for="service">How would you rate your service today?</label>
+                <select name="service_rate" id="service_rate">
+                        <option value="1">1 - Poor</option>
+                        <option value="2">2 - Needs Work</option>
+                        <option value="3">3 - Fair</option>
+                        <option value="4">4 - Good</option>
+                        <option value="5">5 - Excellent</option>
+                    </select>
+                <hr>
+                <label for="experience">How would you rate your experience today?</label>
+                <select name="overall_exp" id="overall_exp">
+                        <option value="1">1 - Poor</option>
+                        <option value="2">2 - Needs Work</option>
+                        <option value="3">3 - Fair</option>
+                        <option value="4">4 - Good</option>
+                        <option value="5">5 - Excellent</option>
+                    </select>
+                <hr>
+                <fieldset data-role="controlgroup" data-type="horizontal" name="recommend_rest" id="recommend_rest">
+                    <legend>Would you recommend this restaurant to a friend?</legend>
+                    <label for="yes">Yes</label>
+                    <input id="yes" name="recommend_rest" type="checkbox" id="yes"></input>
+                    <label for="no">No</label>
+                    <input id="no" name="recommend_rest" type="checkbox" id="no"></input>
+                </fieldset>
+                <hr>
+                <label for="experience">Name:</label>
+                <input name="bname" type="text" id="name">
+                <hr>
+                <label for="email">Email:</label>
+                <input name="email" type="text" id="email">
+                <input type="submit" value="Send">
+            </form>
+        </div>
+        <footer style="text-align: center;" data-role="footer" data-position="fixed">Created by: <a href="mailto:cmkeating@mail.mccneb.edu ">Collin Keating</a></footer>        
+    </div>
+</body>
+
+</html>
